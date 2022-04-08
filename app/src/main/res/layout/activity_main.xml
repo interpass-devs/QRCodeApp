@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    tools:context=".MainActivity"
+    android:padding="20dp"
+    android:background="#1f2226">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/ip_logo_gray"/>
+
+
+    <EditText
+        android:id="@+id/et_userid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:inputType="number"
+        android:hint="아이디 "
+        android:textColorHint="@color/white"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@drawable/linearlayout_radius_r_btn"
+        android:paddingLeft="40dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"/>
+    <EditText
+        android:id="@+id/et_userpw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:inputType="number"
+        android:hint="비밀번호"
+        android:textColorHint="@color/white"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@drawable/linearlayout_radius_r_btn"
+        android:paddingLeft="40dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"/>
+    <Button
+        android:id="@+id/enter_btn"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="60dp"
+        android:text="로그인"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:backgroundTint="#3349C3"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="Android Version 1.0"
+        android:textSize="17sp"
+        android:textColor="#7E8893"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>
