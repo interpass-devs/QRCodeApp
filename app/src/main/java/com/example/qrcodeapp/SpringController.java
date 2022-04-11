@@ -3,7 +3,6 @@ package com.example.qrcodeapp;
 public interface SpringController {
 
 
-
 //
 //    // Retrofit Helper
 //    OkHttpClient okHttpClient = new OkHttpClient.Builder()
