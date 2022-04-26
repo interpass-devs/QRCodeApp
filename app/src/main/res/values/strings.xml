@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">QR 코드 생성앱</string>
-<!--    <string name="base_url">http://ierp.interpass.co.kr/controller/</string>-->
-    <string name="base_url">http://192.168.0.122:8181/controller/</string>
+    <string name="base_url">http://ierp.interpass.co.kr/controller/</string>
+<!--    <string name="base_url">http://192.168.0.122:8181/controller/</string>-->
 </resources>

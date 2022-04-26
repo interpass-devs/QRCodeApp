@@ -6,52 +6,87 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:layout_gravity="center"
-    tools:context=".QRCodeActivity"
-    android:background="#1f2226"
-    android:padding="20dp">
+    tools:context=".View.QRCodeActivity"
+    android:background="@color/white"
+    android:padding="30dp">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:text="QR 코드스캔"
-        android:textColor="#6C7683"
-        android:textStyle="bold"
-        android:textSize="30sp"
-        android:layout_marginTop="25dp"/>
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/back_btn"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="←  코드스캔"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#1f2226"/>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:00:"
+                android:textSize="20sp"
+                android:textColor="#E91E2F"/>
+            <TextView
+                android:id="@+id/tv_timer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15"
+                android:textSize="20sp"
+                android:textColor="#E91E2F"/>
+            <TextView
+                android:id="@+id/tv_timer_reset"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15"
+                android:textSize="20sp"
+                android:textColor="#E91E2F"/>
+        </LinearLayout>
 
-    <TextView
-        android:visibility="gone"
-        android:id="@+id/tv_qr_value"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:text="QR 코드 값"
-        android:textColor="#6C7683"
-        android:textStyle="bold"
-        android:textSize="30sp"
-        android:layout_marginTop="20dp"/>
+    </LinearLayout>
 
+
+
+    <LinearLayout
+        android:layout_weight="0.5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="bottom"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_qr_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="(00000000000)"
+            android:textColor="#1f2226"
+            android:textSize="30sp"/>
+
+    </LinearLayout>
 
     <ImageView
         android:id="@+id/iv_qr_code"
+        android:layout_weight="1"
         android:layout_width="match_parent"
-        android:layout_height="350dp"
-        android:background="#EDE9E9"
-        android:layout_marginTop="20dp"/>
-
+        android:layout_height="0dp"
+        android:padding="10dp"/>
     <TextView
+        android:layout_weight="0.5"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:gravity="center"
-        android:text="QR 코드를 다시 생성하려면 흔들어주세요."
-        android:textColor="#F33E7C"
-        android:textSize="20sp"
-        android:layout_marginTop="20dp"/>
-
-
+        android:textColor="#2578E6"
+        android:text="*QR 코드를 다시 생성하려면\n 흔들어주세요.*"
+        android:textSize="25sp"/>
 
 
 </LinearLayout>

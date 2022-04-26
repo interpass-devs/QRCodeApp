@@ -1,5 +1,7 @@
 package com.example.qrcodeapp;
 
+import com.example.qrcodeapp.VO.User_InfoVo;
+
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -12,9 +14,12 @@ import retrofit2.http.Query;
 
 public interface SpringController {
 
+    @GET("barcode/QRLoginInfo")
+    Call<List<User_InfoVo>> QRLoginInfo(@Query("user_id") String user_id, @Query("user_pw") String user_pw);
 
     @GET("barcode/app_Login")
     Call<List<User_InfoVo>> app_login(@Query("emp_id") String emp_id , @Query("emp_pw") String emp_pw);
+
 
 //    // Retrofit Helper
     OkHttpClient okHttpClient = new OkHttpClient.Builder()
